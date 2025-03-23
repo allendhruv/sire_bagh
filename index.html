@@ -1,67 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <title>Sire Bagh</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <head>
+        <title>Sire Bagh</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/magnific-popup.css">
-    <link rel="stylesheet" href="css/aos.css">
-    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
-    <link rel="stylesheet" href="css/jquery.timepicker.css">
-    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
-    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link href="https://db.onlinewebfonts.com/c/06b9d363ce048e3c2560851973c66c7a?family=Achemost" rel="stylesheet">
-</head>
-<body>
-    <div class="site-wrap">
-        <header class="site-header">
-            <div class="row align-items-center">
-                <div class="col-5 col-md-3">
-                    <a href="index.html" class="site-logo">
-                        <img src="img/logou1.png" alt="Sire Bagh Logo" class="logo-image">
-                    </a>
-                </div>
-                <div class="col-2 col-md-6 text-center d-flex justify-content-around">
-                    <div class="nav-item nav-active"><a href="index.html">HOME</a></div>
-                    <div class="nav-item"><a href="menu.html">MENU</a></div>
-                    <div class="nav-item"><a href="gallery.html">GALLERY</a></div>
-                    <div class="nav-item"><a href="experiance.html">EXPERIENCE</a></div>
-                    <div class="nav-item"><a href="#reservation-section">RESERVATION</a></div>
-                </div>
-            </div>
-        </header>
+        <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet" />
+        <link rel="stylesheet" href="css/bootstrap.css" />
+        <link rel="stylesheet" href="css/animate.css" />
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <link rel="stylesheet" href="css/aos.css" />
+        <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+        <link rel="stylesheet" href="css/jquery.timepicker.css" />
+        <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
+        <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+        <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <link href="https://db.onlinewebfonts.com/c/06b9d363ce048e3c2560851973c66c7a?family=Achemost" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="site-wrap">
+            <script>
+                const toggler = document.querySelector(".navbar-toggler");
+                const menu = document.querySelector(".collapse");
 
-        <div class="main-wrap">
-            <div class="cover_1">
-                <div class="img_bg" style="background-image: url(img/reservation.jpg);" data-stellar-background-ratio="0.5"></div>
-            </div>
-
-            <div class="section services-section">
-                <div class="container">
-                    <div class="row justify-content-center mb-5" data-aos="fade-up">
-                        <div class="col-md-8 text-center">
-                            <h2 class="mb-3">SIRE BAGH</h2>
-                        </div>
+                toggler.addEventListener("click", () => {
+                    menu.classList.toggle("show");
+                });
+            </script>
+            <header class="site-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="">
+                        <a href="index.html" class="site-logo">
+                            <img src="img/logou1.png" alt="Sire Bagh Logo" class="logo-image" />
+                        </a>
                     </div>
-                    <div class="row large-gutters">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                            <img src="img/gal4.png" alt="Image placeholder" class="img-fluid rounded">
+                    <div class="navitems">
+                        <div class="nav-item ml-5 nav-active"><a href="index.html">HOME</a></div>
+                        <div class="nav-item ml-5"><a href="menu.html">MENU</a></div>
+                        <div class="nav-item ml-5"><a href="gallery.html">GALLERY</a></div>
+                        <div class="nav-item ml-5"><a href="experiance.html">EXPERIENCE</a></div>
+                        <div class="nav-item ml-5"><a href="#reservation-section">RESERVATION</a></div>
+                    </div>
+                    <div class="text-center justify-content-around">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                                <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect y="6" width="30" height="3" rx="1.5" fill="black" />
+                                    <rect y="14" width="30" height="3" rx="1.5" fill="black" />
+                                    <rect y="22" width="30" height="3" rx="1.5" fill="black" />
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="collapse text-center" id="navbarSupportedContent">
+                    <div class="nav-item ml-5 nav-active"><a href="index.html">HOME</a></div>
+                    <div class="nav-item ml-5"><a href="menu.html">MENU</a></div>
+                    <div class="nav-item ml-5"><a href="gallery.html">GALLERY</a></div>
+                    <div class="nav-item ml-5"><a href="experiance.html">EXPERIENCE</a></div>
+                    <div class="nav-item ml-5"><a href="#reservation-section">RESERVATION</a></div>
+                </div>
+            </header>
+
+            <div class="main-wrap">
+                <div class="cover_1">
+                    <div class="img_bg" style="background-image: url(img/reservation.jpg)" data-stellar-background-ratio="0.5"></div>
+                </div>
+
+                <div class="section services-section">
+                    <div class="container">
+                        <div class="row justify-content-center mb-5" data-aos="fade-up">
+                            <div class="col-md-8 text-center">
+                                <h2 class="mb-3">SIRE BAGH</h2>
+                            </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="accordion" id="accordion">
-                                <div class="accordion-item">
-                                    <h3 class="mb-0">
-                                        <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">About Sire Bagh<span class="icon"></span></a>
-                                    </h3>
-                                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="p-3">
-                                            <p>Sire Bagh is a unique farm dining restaurant that blends the history of a noble estate with the simplicity and freshness of a farm-to-table dining experience. Set on a peaceful piece of farmland owned by an old noble family of Jodhpur, the beautiful estate is surrounded by fields, gardens, and orchards which offer a relaxing and rustic atmosphere providing an escape from the hustle and bustle of modern life.</p>
+                        <div class="row large-gutters">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <img src="img/gal4.png" alt="Image placeholder" class="img-fluid rounded" />
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item">
+                                        <h3 class="mb-0">
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#collapseOne" role="button" aria-expanded="true" aria-controls="collapseOne">About Sire Bagh<span class="icon"></span></a>
+                                        </h3>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="p-3">
+                                                <p>
+                                                    Sire Bagh is a unique farm dining restaurant that blends the history of a noble estate with the simplicity and freshness of a farm-to-table dining experience. Set on a peaceful piece of farmland owned by an old noble family of Jodhpur, the
+                                                    beautiful estate is surrounded by fields, gardens, and orchards which offer a relaxing and rustic atmosphere providing an escape from the hustle and bustle of modern life.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -69,79 +99,163 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section">
-                <div class="container">
-                    <div class="row justify-content-center mb-5" data-aos="fade-up">
-                        <div class="col-md-8 text-center">
-                            <h2 class="mb-3">Advocacy</h2>
+                <div class="section">
+                    <div class="container">
+                        <div class="row justify-content-center mb-5" data-aos="fade-up">
+                            <div class="col-md-8 text-center">
+                                <h2 class="mb-3">Advocacy</h2>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row large-gutters">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="accordion" id="accordion">
-                                <div class="accordion-item">
-                                    <h3 class="mb-0">
-                                        <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Sustainability<span class="icon"></span></a>
-                                    </h3>
-                                    <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="p-3">
-                                            <p>The restaurant emphasizes on sustainability, using organic farming methods and minimizing waste. Our family takes pride in maintaining the land and ensuring that its resources are responsibly managed for future generations and everyone is committed to sustainable practices.</p>
+                        <div class="row large-gutters">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item">
+                                        <h3 class="mb-0">
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree">Sustainability<span class="icon"></span></a>
+                                        </h3>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="p-3">
+                                                <p>
+                                                    The restaurant emphasizes on sustainability, using organic farming methods and minimizing waste. Our family takes pride in maintaining the land and ensuring that its resources are responsibly managed for future generations and everyone is committed
+                                                    to sustainable practices.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="mb-0">
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Empowerment<span class="icon"></span></a>
+                                        </h3>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="p-3">
+                                                <p>
+                                                    At Sire Bagh we believe in supporting our local community in every way possible. We emphasize on giving back to our people as much as we take from them and we do so by sourcing most of our ingredients and workforce from around the area. Whether
+                                                    it’s the facades of Sire Bagh, the manicured plantation or the food on your plate, it is all from the community and by the community.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="accordion-item">
-                                    <h3 class="mb-0">
-                                        <a class="btn-block p-3" data-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo">Empowerment<span class="icon"></span></a>
-                                    </h3>
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="p-3">
-                                            <p>At Sire Bagh we believe in supporting our local community in every way possible. We emphasize on giving back to our people as much as we take from them and we do so by sourcing most of our ingredients and workforce from around the area. Whether it’s the facades of Sire Bagh, the manicured plantation or the food on your plate, it is all from the community and by the community.</p>
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <img src="img/womn.png" alt="Image placeholder" class="img-fluid rounded" style="width: 600px; height: 350px" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="container">
+                        <div class="row justify-content-center mb-5" data-aos="fade-up">
+                            <div class="col-md-8 text-center">
+                                <h2 class="mb-3">Upcoming</h2>
+                            </div>
+                        </div>
+                        <div class="row large-gutters">
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                                <img src="img/Upcoming.png" alt="Image placeholder" class="img-fluid rounded" />
+                            </div>
+                            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                                <div class="accordion" id="accordion">
+                                    <div class="accordion-item">
+                                        <h3 class="mb-0">
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#qualityCuisine" role="button" aria-expanded="true" aria-controls="collapseOne">Sire Jawai<span class="icon"></span></a>
+                                        </h3>
+                                        <div id="qualityCuisine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="p-3">
+                                                <p>
+                                                    Jawai is a stunning terrain dominated by sheer granite outcrops interspersed with scrub forests and farmland. The diverse ecosystem and the granite hills provide an excellent environment for the wildlife, particularly leopards, which are abundant
+                                                    in this region as well as the sloth bears, crocodiles and numerous migratory birds.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h3 class="mb-0">
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#freshFood" role="button" aria-expanded="false" aria-controls="collapseTwo">Eco Friendly<span class="icon"></span></a>
+                                        </h3>
+                                        <div id="freshFood" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                            <div class="p-3">
+                                                <p>Sire Jawai is a boutique resort with four private villas, which are being built keeping in mind the ecology and cultural sensitivities of the area with minimum impact to the surrounding flora and fauna.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                            <img src="img/womn.png" alt="Image placeholder" class="img-fluid rounded" style="width: 600px; height: 350px;">
-                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="section">
-                <div class="container">
-                    <div class="row justify-content-center mb-5" data-aos="fade-up">
-                        <div class="col-md-8 text-center">
-                            <h2 class="mb-3">Upcoming</h2>
+                <div class="section" data-aos="fade-up">
+                    <div class="container">
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-md-8 text-center" id="reservation-section">
+                                <h2 class="mb-3">Reservation</h2>
+                                <p class="lead">Book A Table</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row large-gutters">
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                            <img src="img/Upcoming.png" alt="Image placeholder" class="img-fluid rounded">
-                        </div>
-                        <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                            <div class="accordion" id="accordion">
-                                <div class="accordion-item">
-                                    <h3 class="mb-0">
-                                        <a class="btn-block p-3" data-toggle="collapse" href="#qualityCuisine" role="button" aria-expanded="true" aria-controls="collapseOne">Sire Jawai<span class="icon"></span></a>
-                                    </h3>
-                                    <div id="qualityCuisine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="p-3">
-                                            <p>Jawai is a stunning terrain dominated by sheer granite outcrops interspersed with scrub forests and farmland. The diverse ecosystem and the granite hills provide an excellent environment for the wildlife, particularly leopards, which are abundant in this region as well as the sloth bears, crocodiles and numerous migratory birds.</p>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10 p-5 form-wrap">
+                                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBaWpoOwbi8GF7QZut5ytb92i09tA1sD5KbmiYOc8LbJn6-g/formResponse" method="POST" target="hidden_iframe3" onsubmit="return validateForm()">
+                                    <div class="row mb-4">
+                                        <div class="form-group col-md-4">
+                                            <label for="name" class="label">Name</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-android-person"></span>
+                                                <input name="entry.1976221119" type="text" class="form-control" id="name" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="email" class="label">Email</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-email"></span>
+                                                <input name="entry.1005037812" type="email" class="form-control" id="email" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="phone" class="label">Phone</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-android-call"></span>
+                                                <input name="entry.2004779575" type="text" class="form-control" id="phone" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="entry.490937875" class="label">Number of Persons</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-android-arrow-dropdown"></span>
+                                                <select name="entry.490937875" id="persons" class="form-control" required>
+                                                    <option value="1">1 person</option>
+                                                    <option value="2">2 persons</option>
+                                                    <option value="3">3 persons</option>
+                                                    <option value="4">4 persons</option>
+                                                    <option value="5+">5+ persons</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="date" class="label">Date</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-calendar"></span>
+                                                <input name="entry.1186294129" type="text" class="form-control" id="date" required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-md-4">
+                                            <label for="time" class="label">Time</label>
+                                            <div class="form-field-icon-wrap">
+                                                <span class="icon ion-android-time"></span>
+                                                <input name="entry.641914170" type="text" class="form-control" id="time" required />
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="accordion-item">
-                                    <h3 class="mb-0">
-                                        <a class="btn-block p-3" data-toggle="collapse" href="#freshFood" role="button" aria-expanded="false" aria-controls="collapseTwo">Eco Friendly<span class="icon"></span></a>
-                                    </h3>
-                                    <div id="freshFood" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="p-3">
-                                            <p>Sire Jawai is a boutique resort with four private villas, which are being built keeping in mind the ecology and cultural sensitivities of the area with minimum impact to the surrounding flora and fauna.</p>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-4">
+                                            <button type="submit" class="btn btn-primary btn-outline-primary btn-block" value="Submit">Submit</button>
                                         </div>
                                     </div>
+                                </form>
+                                <div class="my-3" style="text-align: center">
+                                    <p id="success-contact-submit" class="text-primary" style="font-weight: bold"></p>
                                 </div>
                             </div>
                         </div>
@@ -149,136 +263,75 @@
                 </div>
             </div>
 
-            <div class="section" data-aos="fade-up">
-                <div class="container">
-                    <div class="row justify-content-center mb-5">
-                        <div class="col-md-8 text-center" id="reservation-section">
-                            <h2 class="mb-3">Reservation</h2>
-                            <p class="lead">Book A Table</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-10 p-5 form-wrap">
-                            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSdBaWpoOwbi8GF7QZut5ytb92i09tA1sD5KbmiYOc8LbJn6-g/formResponse" method="POST" target="hidden_iframe3" onsubmit="return validateForm()">
-                                <div class="row mb-4">
-                                    <div class="form-group col-md-4">
-                                        <label for="name" class="label">Name</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-android-person"></span>
-                                            <input name="entry.1976221119" type="text" class="form-control" id="name" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="email" class="label">Email</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-email"></span>
-                                            <input name="entry.1005037812" type="email" class="form-control" id="email" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="phone" class="label">Phone</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-android-call"></span>
-                                            <input name="entry.2004779575" type="text" class="form-control" id="phone" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="entry.490937875" class="label">Number of Persons</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-android-arrow-dropdown"></span>
-                                            <select name="entry.490937875" id="persons" class="form-control" required>
-                                                <option value="1">1 person</option>
-                                                <option value="2">2 persons</option>
-                                                <option value="3">3 persons</option>
-                                                <option value="4">4 persons</option>
-                                                <option value="5+">5+ persons</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="date" class="label">Date</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-calendar"></span>
-                                            <input name="entry.1186294129" type="text" class="form-control" id="date" required>
-                                        </div>
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="time" class="label">Time</label>
-                                        <div class="form-field-icon-wrap">
-                                            <span class="icon ion-android-time"></span>
-                                            <input name="entry.641914170" type="text" class="form-control" id="time" required>
-                                        </div>
+            <footer>
+                <div class="img_bg" style="background-image: url(img/slider-.jpeg)" data-stellar-background-ratio="1">
+                    <div class="site-footer">
+                        <div class="container">
+                            <div class="row small-gutters mb-5">
+                                <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
+                                    <div class="footer-widget">
+                                        <h2>Sire Bagh</h2>
+                                        <p><i>Where every bite tells a story of the land and it's custodians.</i></p>
                                     </div>
                                 </div>
-                                <div class="row justify-content-center">
-                                    <div class="col-md-4">
-                                        <button type="submit" class="btn btn-primary btn-outline-primary btn-block" value="Submit">Submit</button>
+                                <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+                                    <div class="footer-widget">
+                                        <h3>Winter Lunch Service</h3>
+                                        <p><i>Booking from 12:00pm - 1:30pm</i></p>
+                                        <h3>Dinner Service</h3>
+                                        <p><i>Everyday: Till 11pm</i></p>
                                     </div>
                                 </div>
-                            </form>
-                            <div class="my-3" style="text-align: center;">
-                                <p id="success-contact-submit" class="text-primary" style="font-weight: bold;"></p>
+                                <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
+                                    <div class="footer-widget footer-contact-widget">
+                                        <h3>Contact Us</h3>
+                                        <p class="contact-email">
+                                            <b><i>sirebagh@gmail.com</i></b>
+                                        </p>
+                                        <p class="contact-phone">+91 9828076876</p>
+                                        <p class="contact-location"><i class="fas fa-map-marker-alt">Sire Bagh, Outer Ring Road, near Gora Hotel, Jhalamand, Jodhpur, Rajasthan 342001</i></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="600">
+                                    <div class="footer-widget footer-contact-widget">
+                                        <p class="list-unstyled social">
+                                            <a href="https://www.tripadvisor.com/Restaurant_Review-g297668-d32806904-Reviews-Sire_Bagh-Jodhpur_Jodhpur_District_Rajasthan.html"
+                                                ><span class="fa fa-tripadvisor" style="color: #000000"></span><b><u> Check Us On Tripadvisor</u></b></a
+                                            >
+                                        </p>
+                                        <p class="list-unstyled social">
+                                            <a href="https://www.instagram.com/sirebagh?igsh=MTk4aGczZzVqeHB3OQ=="
+                                                ><span class="fa fa-instagram" style="color: #000000"></span><b><u> Contact Us On Instagram</u></b></a
+                                            >
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </footer>
         </div>
 
-        <footer>
-            <div class="img_bg" style="background-image: url(img/slider-.jpeg)" data-stellar-background-ratio="1">
-                <div class="site-footer">
-                    <div class="container">
-                        <div class="row small-gutters mb-5">
-                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
-                                <div class="footer-widget">
-                                    <h2>Sire Bagh</h2>
-                                    <p><i>Where every bite tells a story of the land and it's custodians.</i></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
-                                <div class="footer-widget">
-                                    <h3>Winter Lunch Service</h3>
-                                    <p><i>Booking from 12:00pm - 1:30pm</i></p>
-                                    <h3>Dinner Service</h3>
-                                    <p><i>Everyday: Till 11pm</i></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
-                                <div class="footer-widget footer-contact-widget">
-                                    <h3>Contact Us</h3>
-                                    <p class="contact-email"><b><i>sirebagh@gmail.com</i></b></p>
-                                    <p class="contact-phone">+91 9828076876</p>
-                                    <p class="contact-location"><i class="fas fa-map-marker-alt">Sire Bagh, Outer Ring Road, near Gora Hotel, Jhalamand, Jodhpur, Rajasthan 342001</i></p>
-                                </div>
-                            </div>
-                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="600">
-                                <div class="footer-widget footer-contact-widget">
-                                    <p class="list-unstyled social"><a href="https://www.tripadvisor.com/Restaurant_Review-g297668-d32806904-Reviews-Sire_Bagh-Jodhpur_Jodhpur_District_Rajasthan.html"><span class="fa fa-tripadvisor" style="color: #000000;"></span><b><u> Check Us On Tripadvisor</u></b></a></p>
-                                    <p class="list-unstyled social"><a href="https://www.instagram.com/sirebagh?igsh=MTk4aGczZzVqeHB3OQ=="><span class="fa fa-instagram" style="color: #000000;"></span><b><u> Contact Us On Instagram</u></b></a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+        <!-- loader -->
+        <div id="loader" class="show fullscreen">
+            <svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214" />
+            </svg>
+        </div>
 
-    <!-- loader -->
-    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214"/></svg></div>
-
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/jquery-migrate-3.0.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/jquery.waypoints.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
-    <script src="js/jquery.timepicker.min.js"></script>
-    <script src="js/jquery.stellar.min.js"></script>
-    <script src="js/aos.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
-    <script src="js/main.js"></script>
-</body>
+        <script src="js/jquery-3.2.1.min.js"></script>
+        <script src="js/jquery-migrate-3.0.1.min.js"></script>
+        <script src="js/popper.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/jquery.waypoints.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/jquery.timepicker.min.js"></script>
+        <script src="js/jquery.stellar.min.js"></script>
+        <script src="js/aos.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="js/main.js"></script>
+    </body>
 </html>
