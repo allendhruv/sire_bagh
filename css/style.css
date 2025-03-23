@@ -891,7 +891,7 @@ textarea.form-control {
 }
 
 .large-gutters > [class*="col-"] {
-  padding-right: 0px;
+  padding-right: 50px;
   padding-left: 100px;
 }
 
