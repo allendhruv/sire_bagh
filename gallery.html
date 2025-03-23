@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sire Bagh</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:300,400,700,800|Open+Sans:300,400,700" rel="stylesheet" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css" />
+    <link rel="stylesheet" href="css/jquery.timepicker.css" />
+    <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css" />
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://db.onlinewebfonts.com/c/06b9d363ce048e3c2560851973c66c7a?family=Achemost" rel="stylesheet" />
+    <style>
+        .gallery {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            max-width: 90vw;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+        .lightbox {
+            z-index: 200;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            visibility: hidden;
+            opacity: 0;
+            transition: opacity 0.3s, visibility 0.3s;
+        }
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+        .lightbox.visible {
+            visibility: visible;
+            opacity: 1;
+        }
+        .nav-button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 165, 0, 0.9);
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 10px;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background 0.3s ease, transform 0.2s;
+        }
+        .nav-button:hover {
+            background: rgba(255, 140, 0, 1);
+            transform: translateY(-50%) scale(1.1);
+        }
+        .prev {
+            left: 15px;
+        }
+        .next {
+            right: 15px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255, 0, 0, 0.8);
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 50%;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header">
+        <div class="row align-items-center">
+            <div class="col-5 col-md-3">
+                <a href="index.html" class="site-logo">
+                    <img src="img/logou1.png" alt="Sire Bagh Logo" class="logo-image" />
+                </a>
+            </div>
+            <div class="col-2 col-md-6 text-center d-flex justify-content-around">
+                <div class="nav-item"><a href="index.html">HOME</a></div>
+                <div class="nav-item"><a href="menu.html">MENU</a></div>
+                <div class="nav-item nav-active"><a href="gallery.html">GALLERY</a></div>
+                <div class="nav-item"><a href="experiance.html">EXPERIENCE</a></div>
+                <div class="nav-item"><a href="index.html#reservation-section">RESERVATION</a></div>
+            </div>
+        </div>
+    </header>
+
+    <div class="site-wrap">
+        <div class="cover_1">
+            <div class="img_bg" style="background-image: url(img/gal4.png)" data-stellar-background-ratio="0.5"><br /></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5" data-aos="fade-up">
+                <div class="col-md-8 text-center">
+                    <h2 class="mb-4">Sire Bagh</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="lightbox" id="lightbox">
+            <button class="nav-button prev" id="prev">&#9665;</button>
+            <img id="lightbox-img" src="" />
+            <button class="nav-button next" id="next">&#9655;</button>
+            <button class="close" id="close">&times;</button>
+        </div>
+
+        <div class="gallery my-5 container" id="gallery">
+            <script>
+                const imageUrls = [
+                    "img/gal3.png", "img/rest.png", "img/farm_1.jpg", "img/farm_3.jpg", "img/Experiece - 7 (1).png",
+                    "img/gal5.png", "img/gal6.png", "img/gal7.png", "img/gal8.png", "img/gal9.png", "img/gal10.png",
+                    "img/gal11.png", "img/ng2.jpg", "img/gal13.jpg", "img/gal14.jpg", "img/gal15.png"
+                ];
+
+                const gallery = document.getElementById("gallery");
+                const lightbox = document.getElementById("lightbox");
+                const lightboxImg = document.getElementById("lightbox-img");
+                const prevButton = document.getElementById("prev");
+                const nextButton = document.getElementById("next");
+                const closeButton = document.getElementById("close");
+                let currentIndex = 0;
+
+                function showImage(index) {
+                    lightboxImg.src = imageUrls[index];
+                    lightbox.classList.add("visible");
+                    currentIndex = index;
+                }
+
+                imageUrls.forEach((src, index) => {
+                    const img = document.createElement("img");
+                    img.src = src;
+                    img.addEventListener("click", () => showImage(index));
+                    gallery.appendChild(img);
+                });
+
+                lightbox.addEventListener("click", (e) => {
+                    if (e.target === lightbox) {
+                        lightbox.classList.remove("visible");
+                    }
+                });
+
+                function navigate(direction) {
+                    currentIndex = (currentIndex + direction + imageUrls.length) % imageUrls.length;
+                    showImage(currentIndex);
+                }
+
+                prevButton.addEventListener("click", () => navigate(-1));
+                nextButton.addEventListener("click", () => navigate(1));
+                closeButton.addEventListener("click", () => lightbox.classList.remove("visible"));
+
+                document.addEventListener("keydown", (e) => {
+                    if (lightbox.classList.contains("visible")) {
+                        if (e.key === "ArrowLeft") navigate(-1);
+                        if (e.key === "ArrowRight") navigate(1);
+                        if (e.key === "Escape") lightbox.classList.remove("visible");
+                    }
+                });
+            </script>
+        </div>
+
+        <footer>
+            <div class="img_bg" style="background-image: url(img/slider-.jpeg)" data-stellar-background-ratio="1">
+                <div class="site-footer">
+                    <div class="container">
+                        <div class="row small-gutters mb-5">
+                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="100">
+                                <div class="footer-widget">
+                                    <h2>Sire Bagh</h2>
+                                    <p><i>Where every bite tells a story of the land and it's custodians.</i></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="200">
+                                <div class="footer-widget">
+                                    <h3>Winter Lunch Service</h3>
+                                    <p><i>Booking from 12:00pm - 1:30pm</i></p>
+                                    <h3>Dinner Service</h3>
+                                    <p><i>Everyday: Till 11pm</i></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="400">
+                                <div class="footer-widget footer-contact-widget">
+                                    <h3>Contact Us</h3>
+                                    <p class="contact-email"><b><i>sirebagh@gmail.com</i></b></p>
+                                    <p class="contact-phone">+91 9828076876</p>
+                                    <p class="contact-location"><i class="fas fa-map-marker-alt">Sire Bagh, Outer Ring Road, near Gora Hotel, Jhalamand, Jodhpur, Rajasthan 342001</i></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-5" data-aos="fade" data-aos-delay="600">
+                                <div class="footer-widget footer-contact-widget">
+                                    <p class="list-unstyled social"><a href="https://www.tripadvisor.com/Restaurant_Review-g297668-d32806904-Reviews-Sire_Bagh-Jodhpur_Jodhpur_District_Rajasthan.html"><span class="fa fa-tripadvisor" style="color: #000000;"></span><b><u> Check Us On Tripadvisor</u></b></a></p>
+                                    <p class="list-unstyled social"><a href="https://www.instagram.com/sirebagh?igsh=MTk4aGczZzVqeHB3OQ=="><span class="fa fa-instagram" style="color: #000000;"></span><b><u> Contact Us On Instagram</u></b></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- loader -->
+    <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+        <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+        <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#f4b214" />
+    </svg></div>
+
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/bootstrap-datepicker.js"></script>
+    <script src="js/jquery.timepicker.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
