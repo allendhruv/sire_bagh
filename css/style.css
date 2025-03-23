@@ -470,7 +470,7 @@ textarea.form-control {
 }
 
 .site-footer {
-  background: url("../img/curve_line.svg") repeat-x top left;
+  /* background: url("../img/curve_line.svg") repeat-x top left; */
   padding: 7em 0;
 }
 
@@ -560,7 +560,7 @@ textarea.form-control {
 
 .footer-contact-widget .contact-phone {
   font-size: 20px;
-  color: #000;
+  color: #ffffff;
 }
 
 .lead {
