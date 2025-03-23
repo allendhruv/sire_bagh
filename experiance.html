@@ -21,6 +21,41 @@
   <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
   <link rel="stylesheet" href="css/style.css">
   <link href="https://db.onlinewebfonts.com/c/06b9d363ce048e3c2560851973c66c7a?family=Achemost" rel="stylesheet">
+  <style>
+    .site-half-wrap {
+        display: flex;
+        flex-wrap: wrap;
+        height: 780px;
+        overflow: hidden;
+    }
+
+    .p-0 {
+        padding: 0;
+        flex: 1;
+    }
+
+    .image-bg-fullwidth, .image {
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        border: 2px solid white;
+        opacity: 0;
+        animation: fadeIn 0.5s forwards;
+    }
+
+    /* Sequential animation delay */
+    .image:nth-child(1) { animation-delay: 1s; }
+    .image:nth-child(2) { animation-delay: 1.5s; }
+    .image:nth-child(3) { animation-delay: 2s; }
+    .image:nth-child(4) { animation-delay: 2.5s; }
+    .image:nth-child(5) { animation-delay: 3s; }
+
+    /* Fade-in effect */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 </head>
 
 <body>
@@ -69,10 +104,11 @@
         </div>
       </div>
       
-      <div class="site-half-wrap d-block d-lg-flex" style="height: 780px; overflow: hidden;">
+      <div class="site-half-wrap">
         <div class="p-0 col-6" data-aos="fade">
-          <div class="image-bg-fullwidth" style="background-image: url(img/moli.png); height: 350px;"></div>
+          <div class="image-bg-fullwidth" style="background-image: url(img/moli.png);"></div>
           <div class="half d-block d-lg-flex" style="height: 430px; overflow: hidden;">
+
             <div class="text">
               <p class="mb-4" style="text-align: center;padding-top: 58px;"><b>Sire Bagh offers more than just great food – it gives guests a chance to connect
                 and engage with the land, its history, and its vibrant culture.</b></p>
@@ -91,7 +127,7 @@
             </div>
             <div class="image" style="background-image: url(img/exp6.png);"></div>
           </div>
-          <div class="image-bg-fullwidth" style="background-image: url(img/newexp.png); height: 350px;"></div>
+          <div class="image-bg-fullwidth" style="background-image: url(img/newexp.png);"></div>
         </div>
       </div>
     </div>
