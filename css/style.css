@@ -14,6 +14,45 @@ html {
   width: 150px; /* Adjust this value as needed */
   height: auto; /* Maintains aspect ratio */
 }
+@media (max-width: 1000px) {
+  .logo-image {
+    width: 80px; /* Reduce width even further for smaller screens */
+  }
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+}
+
+.collapse {
+  display: none;
+}
+
+.collapse.show {
+  display: block;
+}
+.navitems{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .collapse {
+    display: none;
+  }
+  .navbar-toggler {
+    display: none;
+  }
+  .navitems{
+    display: flex;
+  }
+}
 body {
   background: #FBEFDF;
   font-family: 'Apple Symbols', "Open Sans", cursive;
