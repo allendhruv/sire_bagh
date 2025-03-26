@@ -17,6 +17,9 @@
         <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css" />
         <link rel="stylesheet" href="css/style.css" />
         <link href="https://db.onlinewebfonts.com/c/06b9d363ce048e3c2560851973c66c7a?family=Achemost" rel="stylesheet" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css" />
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
         <div class="site-wrap">
@@ -113,32 +116,42 @@
                                 <img src="img/womn.png" alt="Image placeholder" class="img-fluid rounded" />
                             </div>
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="accordion" id="accordion">
+                                <!-- Accordion Container -->
+                                <div class="accordion" id="accordionExample">
+                                    <!-- Accordion Item 1 -->
                                     <div class="accordion-item">
                                         <h3 class="mb-0">
-                                            <a class="btn-block p-3" data-toggle="collapse" href="#qualityCuisine" role="button" aria-expanded="true" aria-controls="qualityCuisine">Sustainability<span class="icon"></span></a>
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#qualityCuisine" role="button" aria-expanded="true" aria-controls="qualityCuisine">
+                                                Sustainability <span class="icon"></span>
+                                            </a>
                                         </h3>
-                                        <div id="qualityCuisine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div id="qualityCuisine" class="collapse show" data-parent="#accordionExample">
                                             <div class="p-3">
                                                 <p>
-                                                    The restaurant emphasizes on sustainability, using organic farming methods and minimizing waste. Our family takes pride in maintaining the land and ensuring that its resources are responsibly managed for future generations and everyone is committed
+                                                    The restaurant emphasizes sustainability, using organic farming methods and minimizing waste. Our family takes pride in maintaining the land and ensuring that its resources are responsibly managed for future generations, and everyone is committed
                                                     to sustainable practices.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Accordion Item 2 -->
                                     <div class="accordion-item">
                                         <h3 class="mb-0">
-                                            <a class="btn-block p-3" data-toggle="collapse" href="#freshFood" role="button" aria-expanded="false" aria-controls="collapseTwo">Empowerment<span class="icon"></span></a>
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#freshFood" role="button" aria-expanded="false" aria-controls="freshFood">
+                                                Empowerment <span class="icon"></span>
+                                            </a>
                                         </h3>
-                                        <div id="freshFood" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div id="freshFood" class="collapse" data-parent="#accordionExample">
                                             <div class="p-3">
-                                                <p> At Sire Bagh we believe in supporting our local community in every way possible. We emphasize on giving back to our people as much as we take from them and we do so by sourcing most of our ingredients and workforce from around the area. Whether
-                                                    it’s the facades of Sire Bagh, the manicured plantation or the food on your plate, it is all from the community and by the community.</p>
+                                                <p>
+                                                    At Sire Bagh, we believe in supporting our local community in every way possible. We emphasize giving back to our people as much as we take from them, sourcing most of our ingredients and workforce from the area. Whether it’s the facades of Sire Bagh,
+                                                    the manicured plantation, or the food on your plate, it is all from the community and by the community.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- End Accordion -->
                             </div>
                         </div>
                     </div>
@@ -147,6 +160,7 @@
 
 
 
+                <!-- close section trial -->
                 <div class="section">
                     <div class="container">
                         <div class="row justify-content-center mb-5" data-aos="fade-up">
@@ -159,31 +173,41 @@
                                 <img src="img/Upcoming.png" alt="Image placeholder" class="img-fluid rounded" />
                             </div>
                             <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-                                <div class="accordion" id="accordion">
+                                <!-- Accordion Container -->
+                                <div class="accordion" id="accordionUpcoming">
+                                    <!-- Accordion Item 1 -->
                                     <div class="accordion-item">
                                         <h3 class="mb-0">
-                                            <a class="btn-block p-3" data-toggle="collapse" href="#qualityCuisine" role="button" aria-expanded="true" aria-controls="qualityCuisine">Sire Jawai<span class="icon"></span></a>
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#sireJawai" role="button" aria-expanded="true" aria-controls="sireJawai">
+                                                Sire Jawai <span class="icon"></span>
+                                            </a>
                                         </h3>
-                                        <div id="qualityCuisine" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div id="sireJawai" class="collapse show" data-parent="#accordionUpcoming">
                                             <div class="p-3">
                                                 <p>
                                                     Jawai is a stunning terrain dominated by sheer granite outcrops interspersed with scrub forests and farmland. The diverse ecosystem and the granite hills provide an excellent environment for the wildlife, particularly leopards, which are abundant
-                                                    in this region as well as the sloth bears, crocodiles and numerous migratory birds.
+                                                    in this region as well as the sloth bears, crocodiles, and numerous migratory birds.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- Accordion Item 2 -->
                                     <div class="accordion-item">
                                         <h3 class="mb-0">
-                                            <a class="btn-block p-3" data-toggle="collapse" href="#freshFood" role="button" aria-expanded="false" aria-controls="collapseTwo">Eco Friendly<span class="icon"></span></a>
+                                            <a class="btn-block p-3" data-toggle="collapse" href="#ecoFriendly" role="button" aria-expanded="false" aria-controls="ecoFriendly">
+                                                Eco Friendly <span class="icon"></span>
+                                            </a>
                                         </h3>
-                                        <div id="freshFood" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                                        <div id="ecoFriendly" class="collapse" data-parent="#accordionUpcoming">
                                             <div class="p-3">
-                                                <p>Sire Jawai is a boutique resort with four private villas, which are being built keeping in mind the ecology and cultural sensitivities of the area with minimum impact to the surrounding flora and fauna.</p>
+                                                <p>
+                                                    Sire Jawai is a boutique resort with four private villas, which are being built keeping in mind the ecology and cultural sensitivities of the area with minimum impact to the surrounding flora and fauna.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <!-- End Accordion -->
                             </div>
                         </div>
                     </div>
