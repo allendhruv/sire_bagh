@@ -754,8 +754,8 @@ textarea.form-control {
 }
 
 .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
-  min-height: 700px;
-  height: 100vh;
+  min-height: 400px;
+  height: 35vh;
 }
 
 .cover_1.cover_sm .img_bg, .cover_1.cover_sm .img_bg > .container > .row {
@@ -779,6 +779,10 @@ textarea.form-control {
   .cover_1 .heading {
     font-size: 50px;
     line-height: 1.5;
+  }
+  .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
+    min-height: 500px;
+    height: 60vh;
   }
 }
 
@@ -825,6 +829,10 @@ textarea.form-control {
     -ms-flex: 0 0 33.33333%;
     flex: 0 0 33.33333%;
     max-width: 33.33333%;
+  }
+  .cover_1 .img_bg, .cover_1 .img_bg > .container > .row {
+    min-height: 700px;
+    height: 100vh;
   }
 }
 
@@ -886,13 +894,13 @@ textarea.form-control {
 }
 
 .large-gutters {
-  margin-right: -45px;
-  margin-left: -45px;
+  /* margin-right: -45px;
+  margin-left: -45px; */
 }
 
 .large-gutters > [class*="col-"] {
-  padding-right: 50px;
-  padding-left: 100px;
+  /* padding-right: 50px;
+  padding-left: 100px; */
 }
 
 .accordion .btn-block {
