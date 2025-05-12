@@ -266,6 +266,16 @@ textarea.form-control {
   display: inline-block;
 }
 
+.nav-item {
+    margin-left: 2rem !important;
+    margin-right: 2rem !important;
+}
+
+
+.navitems > .nav-item + .nav-item {
+    margin-left: 3rem; 
+}
+
 .nav-item a{
   color: #9b4b32 !important;
   font-family: 'Achemost', sans-serif;
